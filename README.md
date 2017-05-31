@@ -2,7 +2,7 @@
 
 ## Start Sandbox Host
 ```
-./init.sh ubuntu_16.04
+./init.sh ubuntu_16.04 username password
 ```
 
 ## Add the following to your SSH config
