@@ -1,0 +1,19 @@
+[Unit]
+Description=Docker Application Container Engine
+
+[Service]
+Type=notify
+Environment=GOTRACEBACK=crash
+ExecReload=/bin/kill -s HUP $MAINPID
+Delegate=yes
+KillMode=process
+ExecStart=/usr/local/bin/dockerd-entrypoint.sh
+TasksMax=infinity
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+TimeoutStartSec=1min
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
