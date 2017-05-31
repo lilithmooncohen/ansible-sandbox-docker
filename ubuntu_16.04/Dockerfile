@@ -13,6 +13,7 @@ RUN apt-get update && \
     openssh-server \
     sudo \
     net-tools \
+    dnsutils \
     systemd \
     iptables \
     && \
