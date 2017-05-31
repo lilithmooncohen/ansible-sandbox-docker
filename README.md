@@ -2,6 +2,8 @@
 
 ## Start Sandbox Host
 ```
+git clone https://github.com/ryanckoch/ansible-sandbox-docker.git && \
+cd ansible-sandbox-docker && \
 ./init.sh ubuntu_16.04 username password
 ```
 
